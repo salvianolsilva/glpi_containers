@@ -28,4 +28,5 @@ docker-php-source extract &&\
  echo "apc.enable=1" > /usr/local/etc/php/php.ini &&\
  docker-php-ext-install opcache zip &&\
  docker-php-source delete
+ VOLUME /var/www/html
  USER www-data
